@@ -254,7 +254,7 @@ package_linux-lts312() {
 	mv "$pkgdir/lib" "$pkgdir/usr"
 }
 
-package_linux-ck-headers() {
+package_linux-lts312-headers() {
 	_Hpkgdesc='Header files and scripts to build modules for linux-ck.'
 	pkgdesc="${_Hpkgdesc}"
 	depends=('linux-lts312') # added to keep kernel and headers packages matched
@@ -394,4 +394,4 @@ package_linux-ck-headers() {
 }
 
 # Global pkgdesc and depends are here so that they will be picked up by AUR
-pkgdesc="The ${_pkgname} kernel and modules - 3.12 longterm stable kernel"
+pkgdesc="The ${_pkgname} kernel and modules - 3.4 longterm stable kernel"
