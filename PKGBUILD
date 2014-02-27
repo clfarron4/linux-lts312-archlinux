@@ -62,10 +62,10 @@ source=("http://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.tar.xz"
 	'0001-SUNRPC-Ensure-that-gss_auth-isn-t-freed-before-its-u.patch')
 sha256sums=('2e120ec7fde19fa51dc6b6cc11c81860a0775defcad5a5bf910ed9a50e845a02'
             'f55fccaba90c44475ffd82357e946d8410ca6a1c6ffb78c53d421fa1a2f5a1e2'
-            'f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c'
+            'cdad2ad2f3165be86d903f37f6e761f1707cba51bccb802e08ae259445113cad'
             'faced4eb4c47c4eb1a9ee8a5bf8a7c4b49d6b4d78efbe426e410730e6267d182'
-            '0357cc493c419507c0801f6eafef7721e5fcc4a7450dd1fdeee5f04d191e664e'
-            '9c353be83e45b91a461960cb99d10993bbc8d976a442f7bd7cedb2041875e1b4'
+            '9c99f8de81489227a0255d358d8ab64a5232814ee966a37e2d9bc98e52dad144'
+            'e09abac94e8ec26be195e58b84c60bcdcc088db63b2a0ea9153f9c81c1a0160d'
             'daa75228a4c45a925cc5dbfeba884aa696a973a26af7695adc198c396474cbd5'
             'b6f366ed2100ccab99029f61c39c0781ad4863f537381626196ed43b4b115a21'
             'cbfabd113a1954cd3d6cc1e70c19b95ce36a19e2c92ad93939d4982077178135'
