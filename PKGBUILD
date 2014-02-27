@@ -394,4 +394,4 @@ package_linux-ck-headers() {
 }
 
 # Global pkgdesc and depends are here so that they will be picked up by AUR
-pkgdesc='Linux LTS 3.12 Kernel and Modules.'
+pkgdesc="The ${_pkgname} kernel and modules - 3.12 longterm stable kernel"
