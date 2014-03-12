@@ -1,4 +1,4 @@
-# Maintainer : Claire Farron <https://github.com/clfarron4/linux-lts-ck-archlinux>
+# Maintainer : Claire Farron <https://github.com/clfarron4/ linux-lts312-archlinux>
 # Contributor: graysky <graysky AT archlinux DOT us> (PKGBUILD)
 # Contributor:  fsckd <fsckdaemon -at- gmail dot com> (PKGBUILD)
 # Contributor: Tobias Powalowski <tpowa@archlinux.org> ([core] package)
