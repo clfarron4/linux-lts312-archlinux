@@ -40,7 +40,7 @@ _pkgname=${pkgname}
 _kernelname=${_pkgname#linux}
 _basekernel=3.12
 true && pkgname=(${_pkgname} ${_pkgname}-headers)
-pkgver=3.12.20
+pkgver=3.12.22
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.kernel.org/"
@@ -61,7 +61,7 @@ source=("https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.tar.xz"
 	'0006-nfs-rpc_pipe-fix-cleanup-of-dummy-gssd-directory-whe.patch')
 
 sha256sums=('2e120ec7fde19fa51dc6b6cc11c81860a0775defcad5a5bf910ed9a50e845a02'
-            '1b38ffa0d4891220cc0a622f6e5bad4408636c0203a4e66a3e57e33869d7f894'
+            '8c088b61dccaafa3dda14f2c8770ad97d155386a9861324163bbf9c6f6e098a1'
             'cdad2ad2f3165be86d903f37f6e761f1707cba51bccb802e08ae259445113cad'
             'faced4eb4c47c4eb1a9ee8a5bf8a7c4b49d6b4d78efbe426e410730e6267d182'
             'cc346d86bf3dd07a983dab996251836b53c156e2f053cc17d9a6069256faef8c'
@@ -193,12 +193,13 @@ build() {
 }
 
 package_linux-lts312() {
-	_Kpkgdesc='The ${_pkgname} kernel and modules - 3.12 longterm stable kernel'
-	pkgdesc="${_Kpkgdesc}"
+	pkgdesc='The linux-lts312 kernel and modules - 3.12 longterm stable kernel'
+	#_Kpkgdesc='The linux-lts312 kernel and modules - 3.12 longterm stable kernel'
+	#pkgdesc="${_Kpkgdesc}"
 	depends=('coreutils' 'linux-firmware' 'kmod' 'mkinitcpio>=0.7')
 	optdepends=('crda: to set the correct wireless channels of your country' 'modprobed_db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig')
-	backup=("etc/mkinitcpio.d/${_pkgname}.preset")
-	install=${_pkgname}.install
+	backup=("etc/mkinitcpio.d/linux-lts312.preset")
+	install=linux-lts312.install
 
 	cd "${srcdir}/linux-${_basekernel}"
 
@@ -252,8 +253,9 @@ package_linux-lts312() {
 }
 
 package_linux-lts312-headers() {
-	_Hpkgdesc='Header files and scripts to build modules for linux-ck.'
-	pkgdesc="${_Hpkgdesc}"
+	pkgdesc='Header files and scripts to build modules for linux-lts312.'
+	#_Hpkgdesc='Header files and scripts to build modules for linux-lts312.'
+	#pkgdesc="${_Hpkgdesc}"
 	depends=('linux-lts312') # added to keep kernel and headers packages matched
 
 	install -dm755 "${pkgdir}/usr/lib/modules/${_kernver}"
